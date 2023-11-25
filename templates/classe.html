@@ -1,0 +1,16 @@
+<!-- classe.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rappresentazione della Classe</title>
+</head>
+<body>
+    <h1>Rappresentazione della Classe</h1>
+    <ul>
+        {% for student_id, studente in classe.items() %}
+            <li>{{ studente['nome'] }} {{ studente['cognome'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

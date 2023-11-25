@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup Message</title>
+    <script>
+        function showMessage(mess) {
+            alert(mess);
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var mess = "{{ mess }}";
+        showMessage(mess);
+    </script>
+</body>
+</html>
+                

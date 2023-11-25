@@ -1,0 +1,17 @@
+<!-- add_student.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aggiungi Studente</title>
+</head>
+<body>
+    <h1>Aggiungi Studente</h1>
+    <form action="{{ url_for('add_student') }}" method="POST" autocomplete ="off">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="cognome">Cognome:</label><br>
+        <input type="text" id="cognome" name="cognome"><br><br>
+        <input type="submit" value="Aggiungi Studente">
+    </form>
+</body>
+</html>
